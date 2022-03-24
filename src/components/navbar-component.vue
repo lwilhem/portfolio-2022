@@ -2,6 +2,7 @@
   import { Icon } from "@iconify/vue";
   import { ref } from "vue";
   import { RouterLink } from "vue-router";
+  import DarkThemeSwitch from "./utilities/dark-theme-switch.vue";
   import LinkList from "./utilities/NavbarLinkList";
 
   const linkFormat = ref(LinkList);
@@ -29,7 +30,7 @@
       </nav>
     </div>
     <div class="flex items-center justify-center">
-      <slot name="dark-mode-switch"></slot>
+      <DarkThemeSwitch></DarkThemeSwitch>
     </div>
   </header>
 </template>
