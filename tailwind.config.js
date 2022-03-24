@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-undef
 module.exports = {
+  darkMode: "media",
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
@@ -19,15 +20,6 @@ module.exports = {
           700: "#0c1425",
           800: "#080d18",
           900: "#04070c",
-        },
-      },
-      animation: {
-        growth: "grow 0.25s ease-in-out",
-      },
-      keyframes: {
-        grow: {
-          "0%": { transform: "scale(0)" },
-          "100%": { transform: "scale(1)" },
         },
       },
     },
