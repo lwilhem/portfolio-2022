@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "vue": "^3.2.31",
+    "vue-glitched-writer": "^1.1.7",
     "vue-router": "^4.0.12"
   },
   "devDependencies": {

@@ -9,10 +9,10 @@
 
 <template>
   <header
-    class="w-full h-16 fixed flex items-center justify-between px-16 py-4"
+    class="w-full h-16 fixed flex items-center justify-between px-16 py-4 text-center"
   >
     <RouterLink to="/" class="flex items-center justify-center text-slate-200">
-      <Icon icon="heroicons-solid:cube-transparent" class="w-8 h-8"></Icon>
+      <Icon icon="heroicons-solid:cube-transparent" class="w-8 h-8" />
       <h1 class="uppercase font-title font-bold text-2xl">Wilhem.</h1>
     </RouterLink>
     <div>
