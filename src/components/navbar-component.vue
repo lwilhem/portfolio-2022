@@ -22,7 +22,7 @@
           class="text-slate-200 font-hero font-extrabold px-3"
           :to="link.linkRoute"
         >
-          <span class="link-underline p-1 hover:text-zinc-900">{{
+          <span class="link-underline p-1 hover:text-zinc-900 align-middle">{{
             link.linkName
           }}</span>
         </RouterLink>
