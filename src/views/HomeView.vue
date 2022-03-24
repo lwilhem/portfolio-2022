@@ -2,7 +2,7 @@
 
 <template>
   <section
-    class="bg-zinc-900 flex items-center justify-center w-full h-screen flex-col"
+    class="bg-zinc-900 grid-cols-3 grid-rows-3 gap-4 w-full h-screen"
   ></section>
 </template>
 

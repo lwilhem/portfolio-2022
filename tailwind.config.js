@@ -21,6 +21,15 @@ module.exports = {
           900: "#04070c",
         },
       },
+      animation: {
+        growth: "grow 0.25s ease-in-out",
+      },
+      keyframes: {
+        grow: {
+          "0%": { transform: "scale(0)" },
+          "100%": { transform: "scale(1)" },
+        },
+      },
     },
   },
   plugins: [],

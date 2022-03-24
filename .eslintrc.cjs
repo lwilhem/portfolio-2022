@@ -12,7 +12,7 @@ module.exports = {
     "vue/setup-compiler-macros": true,
   },
   rules: {
-    "vue/script-indent": ["error", 2, { baseIndent: 1 }],
+    "vue/script-indent": ["error", 0, { baseIndent: 1 }],
   },
   overrides: [
     {

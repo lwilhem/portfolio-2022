@@ -1,5 +1,5 @@
 <script setup>
-  import { CubeTransparentIcon, MoonIcon, SunIcon } from "@heroicons/vue/solid";
+  import { Icon } from "@iconify/vue";
   import { ref } from "vue";
   import { RouterLink } from "vue-router";
   import LinkList from "./utilities/NavbarLinkList";
@@ -8,26 +8,26 @@
 </script>
 
 <template>
-  <header class="w-full h-16 fixed flex items-center justify-between px-16">
+  <header
+    class="w-full h-16 fixed flex items-center justify-between px-16 py-4"
+  >
     <RouterLink to="/" class="flex items-center justify-center text-slate-200">
-      <CubeTransparentIcon class="w-8 h-8"></CubeTransparentIcon>
+      <Icon icon="heroicons-solid:cube-transparent" class="w-8 h-8"></Icon>
       <h1 class="uppercase font-title font-bold text-2xl">Wilhem.</h1>
     </RouterLink>
     <div>
-      <nav>
+      <nav class="flex">
         <RouterLink
           v-for="link in linkFormat"
           class="text-slate-200 font-hero font-extrabold px-3"
           :to="link.linkRoute"
         >
-          <span>{{ link.linkName }}</span>
+          <span class="special-underline p-1">{{ link.linkName }}</span>
         </RouterLink>
       </nav>
     </div>
     <div class="flex items-center justify-center">
-      <MoonIcon class="w-8 h-8 text-slate-200"></MoonIcon>
-      <div class="bg-slate-200 w-8 h-4 mx-2 rounded-full"></div>
-      <SunIcon class="w-8 h-8 text-yellow-300"></SunIcon>
+      <slot name="dark-mode-switch"></slot>
     </div>
   </header>
 </template>
