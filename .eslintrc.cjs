@@ -11,4 +11,15 @@ module.exports = {
   env: {
     "vue/setup-compiler-macros": true,
   },
+  rules: {
+    "vue/script-indent": ["error", 2, { baseIndent: 1 }],
+  },
+  overrides: [
+    {
+      files: ["*.vue"],
+      rules: {
+        indent: "off",
+      },
+    },
+  ],
 };

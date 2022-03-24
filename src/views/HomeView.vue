@@ -1,7 +1,9 @@
 <script setup></script>
 
 <template>
-  <h1>Hello Home</h1>
+  <section
+    class="bg-zinc-900 flex items-center justify-center w-full h-screen flex-col"
+  ></section>
 </template>
 
 <script></script>
