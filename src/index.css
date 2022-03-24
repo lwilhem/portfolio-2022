@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 @layer utilities {
-  .special-underline {
+  .link-underline {
     @apply bg-gradient-to-r from-orange-500 to-orange-500
       bg-no-repeat [background-position:0_88%]
       [background-size:100%_0.2em]
