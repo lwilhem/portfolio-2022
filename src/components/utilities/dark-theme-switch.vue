@@ -33,22 +33,22 @@
 
 <template>
   <div class="flex items-center justify-center align-middle">
-    <Icon icon="heroicons-solid:sun" class="w-8 h-8 text-yellow-500 mx-3" />
+    <Icon
+      icon="bi:moon-fill"
+      class="w-6 h-6 text-zinc-900 mx-3 dark:text-slate-200"
+    />
     <Switch
       v-model="enabled"
-      :class="enabled ? 'bg-slate-300' : 'bg-zinc-900'"
+      :class="enabled ? 'bg-zinc-900' : 'bg-slate-200'"
       class="transition duration-200 ease-in-out relative inline-flex items-center h-6 rounded-full w-11"
     >
       <span class="sr-only">Enable Dark Mode</span>
       <span
         :class="enabled ? 'translate-x-6' : 'translate-x-1'"
-        class="transition duration-200 ease-in-out inline-block w-4 h-4 transform bg-white rounded-full"
+        class="transition duration-200 ease-in-out inline-block w-4 h-4 transform bg-white dark:bg-gray-400 rounded-full"
       />
     </Switch>
-    <Icon
-      icon="bi:moon-fill"
-      class="w-6 h-6 text-zinc-900 mx-3 dark:text-slate-200"
-    />
+    <Icon icon="heroicons-solid:sun" class="w-8 h-8 text-yellow-500 mx-3" />
   </div>
 </template>
 
