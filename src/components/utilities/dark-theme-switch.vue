@@ -23,8 +23,10 @@
 
     if (currentTheme === "light") {
       localStorage.theme = "dark";
+      document.documentElement.className = "dark";
     } else {
       localStorage.theme = "light";
+      document.documentElement.className = "light";
     }
   });
 </script>
