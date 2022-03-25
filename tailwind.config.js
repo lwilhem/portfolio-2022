@@ -4,6 +4,9 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      textUnderlineOffset: {
+        45: "-3px",
+      },
       fontFamily: {
         title: ["Rajdhani", "sans-serif"],
         hero: ["Alef", "sans-serif"],
@@ -23,7 +26,7 @@ module.exports = {
         },
       },
       animation: {
-        "spin-slow": "spin 8s linear infinite",
+        "spin-slow": "spin  8s linear infinite",
       },
     },
   },
