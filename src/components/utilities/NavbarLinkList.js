@@ -8,10 +8,6 @@ const LinkList = [
     linkRoute: "/aboutme",
   },
   {
-    linkName: "Skills.",
-    linkRoute: "/skills",
-  },
-  {
     linkName: "Portfolio.",
     linkRoute: "/portfolio",
   },

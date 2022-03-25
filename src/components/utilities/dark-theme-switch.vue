@@ -37,7 +37,7 @@
     />
     <Switch
       v-model="enabled"
-      :class="enabled ? 'bg-zinc-900' : 'bg-slate-200'"
+      :class="enabled ? 'bg-slate-200' : 'bg-zinc-900'"
       class="transition duration-200 ease-in-out relative inline-flex items-center h-6 rounded-full w-11"
     >
       <span class="sr-only">Enable Dark Mode</span>
