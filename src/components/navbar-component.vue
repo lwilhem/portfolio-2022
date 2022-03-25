@@ -10,14 +10,14 @@
 
 <template>
   <header
-    class="w-full h-16 fixed flex items-center justify-between px-16 py-4 text-center"
+    class="w-full h-16 flex items-center justify-between px-16 py-4 text-center bg-slate-200 dark:bg-zinc-900"
   >
     <RouterLink
       to="/"
       class="flex items-center justify-center text-zinc-900 dark:text-slate-200"
     >
       <Icon icon="heroicons-solid:cube-transparent" class="w-8 h-8" />
-      <h1 class="uppercase font-title font-bold text-2xl">Wilhem.</h1>
+      <h1 class="uppercase font-title font-bold text-2xl">W/L.</h1>
     </RouterLink>
     <div>
       <nav class="flex">

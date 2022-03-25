@@ -18,8 +18,6 @@
   });
   watch(enabled, () => {
     const currentTheme = localStorage.getItem("theme");
-    console.log(enabled.value);
-    console.log(currentTheme);
 
     if (currentTheme === "light") {
       localStorage.theme = "dark";
