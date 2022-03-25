@@ -17,7 +17,7 @@
       class="flex items-center justify-center text-zinc-900 dark:text-slate-200"
     >
       <Icon icon="heroicons-solid:cube-transparent" class="w-8 h-8" />
-      <h1 class="uppercase font-title font-bold text-2xl">W/L.</h1>
+      <span class="uppercase font-title font-bold text-2xl">W/L.</span>
     </RouterLink>
     <div>
       <nav class="flex">
