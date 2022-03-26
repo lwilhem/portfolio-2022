@@ -57,11 +57,11 @@
     <div class="w-2/5 h-content p-6 flex flex-col items-center justify-center">
       <Icon
         icon="ion:cog"
-        class="w-72 h-72 animate-spin-slow mb-12 text-indigo-700 dark:text-slate-200"
+        class="w-72 h-72 animate-spin-slow mb-12 text-indigo-700 dark:text-indigo-400"
       />
       <VueWriter
         :array="arr"
-        class="font-hero font-bold text-center text-4xl w-full mb-24 text-indigo-700 dark:text-slate-200"
+        class="font-hero font-bold text-center text-4xl w-full mb-24 text-indigo-700 dark:text-indigo-400"
       />
     </div>
   </section>
