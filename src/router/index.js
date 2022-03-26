@@ -25,9 +25,9 @@ const router = createRouter({
       component: () => import("../views/ProjectListView.vue"),
     },
     {
-      path: "/portfolio/:project",
+      path: "/portfolio/:test",
       name: "singleProject",
-      component: () => import("../views/ProjectListView.vue"),
+      component: () => import("../views/ProjectDetailsView.vue"),
     },
   ],
 });

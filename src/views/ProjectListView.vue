@@ -1,6 +1,7 @@
 <script setup>
   import { Icon } from "@iconify/vue";
   import { ref } from "vue";
+  import { RouterLink } from "vue-router";
   import SingleProjectComponent from "../components/single-project-component.vue";
   import projectList from "../components/utilities/projectList";
 
@@ -64,6 +65,11 @@
           :link="project.repoLink"
         >
         </SingleProjectComponent>
+        <RouterLink
+          :to="{ name: 'singleProject', params: { test: project.id } }"
+        >
+          <span>test</span>
+        </RouterLink>
       </article>
     </div>
   </section>
