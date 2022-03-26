@@ -4,6 +4,13 @@
   import SingleProjectComponent from "../components/single-project-component.vue";
   import projectList from "../components/utilities/projectList";
 
+  var isActive = ref(false);
+
+  function toggleIsActive() {
+    isActive.value = !isActive.value;
+    console.log(isActive.value);
+  }
+
   const portfolioContent = ref(projectList);
   console.log(SingleProjectComponent);
 </script>
@@ -42,6 +49,7 @@
         </div>
         <button
           class="bg-red-500 hover:px-8 dark:bg-red-700 shadow-none hover:shadow-xl flex items-center justify-center p-4 rounded-full transition-all"
+          @click="() => toggleIsActive()"
         >
           <span class="mx-2 font-hero">Know More</span>
           <Icon
@@ -52,6 +60,11 @@
         </button>
       </article>
     </div>
+    <SingleProjectComponent
+      v-if="isActive"
+      :toggleIsActive="() => toggleIsActive()"
+    >
+    </SingleProjectComponent>
   </section>
 </template>
 
