@@ -31,11 +31,11 @@
         >
           {{ project.description }}
         </p>
-        <div class="flex items-center justify-center">
+        <div class="flex items-center justify-center h-8 max-h-8">
           <Icon
             v-for="icon in project.technologies"
             :icon="icon"
-            class="w-6 h-6 m-2"
+            class="w-6 h-6 m-2 text-slate-200 dark:text-zinc-900 hover:w-8 hover:h-8 hover:text-red-500 dark:hover:text-red-700 transition-all ease-in-out duration-500"
           />
         </div>
         <RouterLink
