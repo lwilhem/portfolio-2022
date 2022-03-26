@@ -2,15 +2,8 @@
   import { Icon } from "@iconify/vue";
   import { ref } from "vue";
   import { RouterLink } from "vue-router";
-  import SingleProjectComponent from "../components/single-project-component.vue";
   import projectList from "../components/utilities/projectList";
-
-  var isActive = ref(false);
   const portfolioContent = ref(projectList);
-
-  function toggleIsActive(id) {
-    isActive.value = !isActive.value;
-  }
 </script>
 
 <template>
@@ -45,9 +38,12 @@
             class="w-6 h-6 m-2"
           />
         </div>
-        <button
+        <RouterLink
+          :to="{
+            name: 'singleProject',
+            params: { test: project.id },
+          }"
           class="bg-red-500 hover:px-8 dark:bg-red-700 shadow-none hover:shadow-xl flex items-center justify-center p-4 rounded-full transition-all"
-          @click="() => toggleIsActive()"
         >
           <span class="mx-2 font-hero">Know More</span>
           <Icon
@@ -55,20 +51,6 @@
             :inline="true"
             class="w-6 h-6 mx-2"
           />
-        </button>
-        <SingleProjectComponent
-          v-if="isActive"
-          :toggleIsActive="() => toggleIsActive()"
-          :name="project.name"
-          :desc="project.description"
-          :tech="project.technologies"
-          :link="project.repoLink"
-        >
-        </SingleProjectComponent>
-        <RouterLink
-          :to="{ name: 'singleProject', params: { test: project.id } }"
-        >
-          <span>test</span>
         </RouterLink>
       </article>
     </div>
