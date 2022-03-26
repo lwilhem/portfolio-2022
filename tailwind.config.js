@@ -13,6 +13,7 @@ module.exports = {
         body: ["Work Sans", "sans-serif"],
       },
       colors: {
+        "popup-bg": "rgba(0, 0, 0, 0.5)",
         ayo: {
           100: "#d0d3d8",
           200: "#a1a6b1",

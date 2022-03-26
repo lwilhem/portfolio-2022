@@ -26,7 +26,7 @@
     </h2>
     <div class="flex flex-wrap p-6 items-center justify-center">
       <article
-        class="bg-indigo-700 w-2/5 h-80 shadow-2xl hover:shadow-lg dark:shadow-none rounded-3xl m-2 dark:bg-indigo-400 hover:w-3/6 transition-all duration-500 ease-in-out px-4 py-2 flex flex-col justify-evenly items-center"
+        class="bg-indigo-700 w-2/5 h-80 shadow-2xl hover:shadow-lg dark:shadow-none rounded-3xl m-2 dark:bg-slate-200 hover:w-3/6 transition-all duration-500 ease-in-out px-4 py-2 flex flex-col justify-evenly items-center"
         v-for="project in portfolioContent"
         :id="project.id"
       >
@@ -58,13 +58,13 @@
             class="w-6 h-6 mx-2"
           />
         </button>
+        <SingleProjectComponent
+          v-if="isActive"
+          :toggleIsActive="() => toggleIsActive()"
+        >
+        </SingleProjectComponent>
       </article>
     </div>
-    <SingleProjectComponent
-      v-if="isActive"
-      :toggleIsActive="() => toggleIsActive()"
-    >
-    </SingleProjectComponent>
   </section>
 </template>
 
