@@ -5,14 +5,11 @@
   import projectList from "../components/utilities/projectList";
 
   var isActive = ref(false);
-
-  function toggleIsActive() {
-    isActive.value = !isActive.value;
-    console.log(isActive.value);
-  }
-
   const portfolioContent = ref(projectList);
-  console.log(SingleProjectComponent);
+
+  function toggleIsActive(id) {
+    isActive.value = !isActive.value;
+  }
 </script>
 
 <template>
@@ -61,6 +58,10 @@
         <SingleProjectComponent
           v-if="isActive"
           :toggleIsActive="() => toggleIsActive()"
+          :name="project.name"
+          :desc="project.description"
+          :tech="project.technologies"
+          :link="project.repoLink"
         >
         </SingleProjectComponent>
       </article>
