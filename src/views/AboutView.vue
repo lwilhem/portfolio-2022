@@ -1,4 +1,5 @@
 <script setup>
+  import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/vue";
   import { Icon } from "@iconify/vue";
 </script>
 
@@ -13,7 +14,20 @@
     />
     About Me !
   </h2>
-  <section class="w-full p-24 bg-slate-200 dark:bg-zinc-900"></section>
+  <section class="bg-slate-200 dark:bg-zinc-900">
+    <TabGroup>
+      <TabList class="bg-red-500 p-5 flex items-center justify-center">
+        <Tab>Qui suis-je ?</Tab>
+        <Tab>Mon Parcours</Tab>
+        <Tab>Mes Compétences</Tab>
+      </TabList>
+      <TabPanels>
+        <TabPanel>Content 1</TabPanel>
+        <TabPanel>Content 2</TabPanel>
+        <TabPanel>Content 3</TabPanel>
+      </TabPanels>
+    </TabGroup>
+  </section>
 </template>
 
 <script></script>
