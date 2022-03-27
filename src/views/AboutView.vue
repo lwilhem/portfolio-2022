@@ -59,10 +59,16 @@
       </TabList>
       <TabPanels>
         <TabPanel class="flex p-12 bg-red-500 dark:bg-indigo-400">
-          <div>
-            <h2>Wilhem Lecanu</h2>
-            <VueWriter :array="arr" />
-            <p>
+          <div class="text-slate-200">
+            <h2 class="text-zinc-900 font-title font-bold text-4xl">
+              Wilhem Lecanu
+            </h2>
+            <VueWriter
+              :array="arr"
+              class="font-hero text-2xl font-semibold mb-8"
+            />
+            <span class="px-80 py-0 rounded-full bg-zinc-700"></span>
+            <p class="w-5/6 font-body flex py-8">
               Actuellement étudiant en 2ème Année à l'IIM(Institut de l'Internet
               et du Multimédia) Dans un cursus Développement Web, je tends à me
               spécialiser vers des technologies back-end comme Node & PHP. Je
