@@ -7,17 +7,22 @@
 </script>
 
 <template>
+  <h2
+    class="font-title font-bold text-8xl text-zinc-900 dark:text-slate-200 bg-slate-200 dark:bg-zinc-900 text-center py-12 pt-16 w-full flex items-center justify-center"
+  >
+    <Icon
+      icon="fa6-solid:bolt"
+      class="w-32 h-32 mx-2 text-red-500 dark:text-indigo-400"
+      :inline="true"
+    />
+    Mes Projets !
+  </h2>
   <section
     class="p-4 text-center w-full h-content bg-slate-200 dark:bg-zinc-900"
   >
-    <h2
-      class="font-title font-bold text-4xl text-indigo-700 dark:text-slate-200"
-    >
-      What I've been cooking !
-    </h2>
     <div class="flex flex-wrap p-6 items-center justify-center">
       <article
-        class="bg-indigo-700 w-2/5 h-80 shadow-2xl hover:shadow-lg dark:shadow-none rounded-3xl m-2 dark:bg-slate-200 hover:w-3/6 transition-all duration-500 ease-in-out px-4 py-2 flex flex-col justify-evenly items-center"
+        class="bg-indigo-700 hover:bg-indigo-800 dark:hover:bg-indigo-400 w-2/5 h-80 shadow-2xl hover:shadow-lg dark:shadow-none rounded-3xl m-2 dark:bg-slate-200 hover:w-3/6 transition-all duration-500 ease-in-out px-4 py-2 flex flex-col justify-evenly items-center"
         v-for="project in portfolioContent"
         :id="project.id"
       >
