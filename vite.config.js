@@ -3,6 +3,7 @@ import { fileURLToPath, URL } from "url";
 import { defineConfig } from "vite";
 
 // https://vitejs.dev/config/
+const port = 3000;
 export default defineConfig({
   plugins: [vue()],
   resolve: {
