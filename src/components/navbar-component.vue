@@ -20,7 +20,7 @@
       <span class="uppercase font-title font-bold text-2xl">W/L.</span>
     </RouterLink>
     <div>
-      <nav class="flex">
+      <nav class="flex md:hidden">
         <RouterLink
           v-for="link in linkFormat"
           class="text-zinc-900 font-hero font-extrabold px-3 hover:text-slate-200 dark:text-slate-200 dark:hover:text-zinc-900"
