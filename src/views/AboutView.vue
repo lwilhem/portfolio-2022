@@ -1,9 +1,12 @@
 <script setup>
   import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/vue";
   import { Icon } from "@iconify/vue";
+  import { ref } from "vue";
   import VueWriter from "vue-writer";
+  import SkillsList from "../components/utilities/skillsList";
 
   const arr = ["Etudiant", "Développeur Fullstack", "UX/UI Designer"];
+  const list = ref(SkillsList);
 </script>
 
 <template>
@@ -79,13 +82,22 @@
               que de différentes manières de perfectionner mes compétences.
             </p>
           </div>
-          <img src="/wilhem-photo.jpg" alt="" class="w-1/2" />
+          <img src="/wilhem-photo.jpg" alt="" class="w-1/2 rounded-lg" />
         </TabPanel>
         <TabPanel>Content 2 </TabPanel>
-        <TabPanel> Content 3</TabPanel>
+        <TabPanel class="flex p-12 flex-wrap items-center justify-center">
+          <div v-for="skill in list" class="m-6">
+            <ve-progress
+              :progress="skill.progression"
+              reverse
+              animation="bounce 3000"
+            >
+            </ve-progress>
+          </div>
+        </TabPanel>
       </TabPanels>
     </TabGroup>
   </section>
 </template>
 
-<script></script>
+<style></style>

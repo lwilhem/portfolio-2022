@@ -10,6 +10,7 @@
   "dependencies": {
     "@headlessui/vue": "^1.5.0",
     "vue": "^3.2.31",
+    "vue-ellipse-progress": "^2.1.0",
     "vue-router": "^4.0.12",
     "vue-writer": "^1.2.0"
   },
