@@ -31,12 +31,11 @@ const projectList = [
     ],
     repoLink: [
       {
-        deployedAt: "https://github.com/lwilhem/devlab-goodies-backend",
-        backend: "https://github.com/lwilhem/devlab-goodies-backend",
+        backend: "https://github.com/lwilhem/symfony-e-commerce",
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tortor mi. Vivamus non metus vel leo suscipit suscipit suscipit sit amet massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sed pulvinar elit. Aliquam vitae aliquet libero, ac dignissim libero. Duis mattis nibh tortor, vitae sodales risus euismod non. Cras sed lobortis lacus. Sed sit amet elementum risus. Pellentesque varius auctor fermentum. Mauris id tempus tortor. Vestibulum hendrerit metus in mauris porta venenatis. Phasellus porta tincidunt nibh eu tempus. Sed tristique vitae tellus ut bibendum. Mauris interdum metus ut magna condimentum consequat.",
+      "Un projet que j’ai réalisé afin de me former sur le frameWork PHP Symfony et son écosystème, Basé sur un template de site e-commerce, j’y ai rajouté des fonctionnalités comme un back-office fonctionnel, avec de un système complet de gestions d’articles pour les vendeurs, Un filtre par catégories, et une authentification. Coté Front-Office, les utilisateurs peuvent parcourir la boutique, filtrer les articles par catégories, et se connecter pour gérer leurs paniers dans une page dédiée.",
   },
   {
     id: 2,
@@ -49,12 +48,12 @@ const projectList = [
     ],
     repoLink: [
       {
-        deployedAt: "https://github.com/lwilhem/devlab-goodies-backend",
-        backend: "https://github.com/lwilhem/devlab-goodies-backend",
+        deployedAt: "https://poo.wlecanu.com",
+        backend: "https://github.com/lwilhem/spa-project",
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tortor mi. Vivamus non metus vel leo suscipit suscipit suscipit sit amet massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sed pulvinar elit. Aliquam vitae aliquet libero, ac dignissim libero. Duis mattis nibh tortor, vitae sodales risus euismod non. Cras sed lobortis lacus. Sed sit amet elementum risus. Pellentesque varius auctor fermentum. Mauris id tempus tortor. Vestibulum hendrerit metus in mauris porta venenatis. Phasellus porta tincidunt nibh eu tempus. Sed tristique vitae tellus ut bibendum. Mauris interdum metus ut magna condimentum consequat.",
+      "J’ai réalisé ce projet dans le cadre d’un cours de programmation Orienté-Objet en PHP, C’est un Site qui utilise pleinement la programmation Orienté-Objet, et qui mimique un système où il est possible d’enregistrer & de répartir des animaux abandonnés, Ainsi Qu’un système de permission entre admin & Utilisateurs, ce projet est déployé sur OVH, et a été l’occasion d’apprendre à travailler avec des hébergements et les protocoles SLL / HTTPS, ansi que des outils FTP.",
   },
   {
     id: 3,
@@ -67,43 +66,11 @@ const projectList = [
     ],
     repoLink: [
       {
-        deployedAt: "https://github.com/lwilhem/devlab-goodies-backend",
-        backend: "https://github.com/lwilhem/devlab-goodies-backend",
-        frontend: "https://github.com/lwilhem/vite-devlab-goodies-client",
+        backend: "https://github.com/lwilhem/node-instant-messaging-api",
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tortor mi. Vivamus non metus vel leo suscipit suscipit suscipit sit amet massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sed pulvinar elit. Aliquam vitae aliquet libero, ac dignissim libero. Duis mattis nibh tortor, vitae sodales risus euismod non. Cras sed lobortis lacus. Sed sit amet elementum risus. Pellentesque varius auctor fermentum. Mauris id tempus tortor. Vestibulum hendrerit metus in mauris porta venenatis. Phasellus porta tincidunt nibh eu tempus. Sed tristique vitae tellus ut bibendum. Mauris interdum metus ut magna condimentum consequat.",
-  },
-  {
-    id: 4,
-    name: "Portfolio version 2022",
-    technologies: [
-      "mdi:vuejs",
-      "teenyicons:tailwind-solid",
-      "simple-icons:vite",
-    ],
-    repoLink: [
-      {
-        deployedAt: "https://github.com/lwilhem/devlab-goodies-backend",
-        frontend: "https://github.com/lwilhem/vite-devlab-goodies-client",
-      },
-    ],
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tortor mi. Vivamus non metus vel leo suscipit suscipit suscipit sit amet massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sed pulvinar elit. Aliquam vitae aliquet libero, ac dignissim libero. Duis mattis nibh tortor, vitae sodales risus euismod non. Cras sed lobortis lacus. Sed sit amet elementum risus. Pellentesque varius auctor fermentum. Mauris id tempus tortor. Vestibulum hendrerit metus in mauris porta venenatis. Phasellus porta tincidunt nibh eu tempus. Sed tristique vitae tellus ut bibendum. Mauris interdum metus ut magna condimentum consequat.",
-  },
-  {
-    id: 5,
-    name: "Applications Quizz VuejS",
-    technologies: ["mdi:vuejs", "simple-icons:vite", "akar-icons:sass-fill"],
-    repoLink: [
-      {
-        deployedAt: "https://github.com/lwilhem/devlab-goodies-backend",
-        frontend: "https://github.com/lwilhem/vite-devlab-goodies-client",
-      },
-    ],
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tortor mi. Vivamus non metus vel leo suscipit suscipit suscipit sit amet massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sed pulvinar elit. Aliquam vitae aliquet libero, ac dignissim libero. Duis mattis nibh tortor, vitae sodales risus euismod non. Cras sed lobortis lacus. Sed sit amet elementum risus. Pellentesque varius auctor fermentum. Mauris id tempus tortor. Vestibulum hendrerit metus in mauris porta venenatis. Phasellus porta tincidunt nibh eu tempus. Sed tristique vitae tellus ut bibendum. Mauris interdum metus ut magna condimentum consequat.",
+      "Un Projet de messagerie Instantanée, Sur lequel J’ai Principalement contribué à l’architecture Back-End. Le project Utilise NodeJS, Le framework HTTP Express, Et MongoDB, Il possède un système de communication instantané entre utilisateurs, ainsi qu’un système d’authentification, les messages sont stockées sur MongoDb et servit via le service Socket.IO ",
   },
 ];
 

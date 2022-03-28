@@ -23,34 +23,43 @@
         <h1
           class="font-title font-bold text-4xl uppercase underline underline-offset-8 decoration-red-500 decoration-2 hover:decoration-4 dark:decoration-slate-200 dark:text-red-500"
         >
-          I'm Wilhem Lecanu !
+          Je suis Wilhem Lecanu !
         </h1>
       </div>
-      <p class="my-8 font-body text-center dark:text-slate-300">
-        21 years-old French Undergraduate Web Development Student at
-        IIM(Institut de L'Internet et du multimédia), With some Experience in
-        Graphic Design. While I strive to be as versatile as possible, I tend to
-        specialize in Backend Development, with Technologies such as Node,
-        Symfony & Python.
+      <p class="my-8 py-4 font-body text-center dark:text-slate-300">
+        Actuellement étudiant en 2ème année à l'Institut de l'Internet & du
+        Multimédia dans le cursus Développement Web. Avec une expérience
+        précédente dans le graphisme. Bien que j'aspire à être le plus versatile
+        possible, je préfère me spécialiser dans les technologies Back-end
+        telles que NodeJS et symfony.
       </p>
       <div
         class="flex items-center bg-indigo-700 dark:bg-slate-200 dark:text-red-500 px-8 py-6 rounded-lg text-slate-200 shadow-2xl"
       >
         <Icon icon="fa-solid:bolt" class="w-8 h-8 mx-4" />
-        <span class="uppercase font-hero text-2xl">Where to Find Me</span>
+        <span class="uppercase font-hero text-2xl">Où me trouver !</span>
         <Icon icon="bi:arrow-right-circle-fill" class="w-8 h-8 mx-4" />
       </div>
       <div
         class="flex items-center justify-between w-full px-4 my-12 text-red-500 dark:text-indigo-400"
       >
-        <a href="">
-          <Icon icon="akar-icons:github-fill" class="w-12 h-12 mx-4" />
+        <a href="https://github.com/lwilhem">
+          <Icon
+            icon="akar-icons:github-fill"
+            class="w-12 h-12 mx-4 hover:text-zinc-900 dark:hover:text-slate-200 transition-all duration-500"
+          />
         </a>
-        <a href="">
-          <Icon icon="icomoon-free:linkedin" class="w-12 h-12 mx-4" />
+        <a href="https://www.linkedin.com/in/wilhem-lecanu-4181a31a1/">
+          <Icon
+            icon="icomoon-free:linkedin"
+            class="w-12 h-12 mx-4 hover:text-zinc-900 dark:hover:text-slate-200 transition-all duration-500"
+          />
         </a>
-        <a href="">
-          <Icon icon="fontisto:stack-overflow" class="w-12 h-12 mx-4" />
+        <a href="https://stackoverflow.com/users/18608571/wilhem-lecanu">
+          <Icon
+            icon="fontisto:stack-overflow"
+            class="w-12 h-12 mx-4 hover:text-zinc-900 dark:hover:text-slate-200 transition-all duration-500"
+          />
         </a>
       </div>
     </div>

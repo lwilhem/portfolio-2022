@@ -64,12 +64,12 @@
               class="px-80 py-0 rounded-full bg-zinc-700 dark:bg-indigo-400"
             ></span>
             <p class="w-5/6 font-body flex py-8">
-              Actuellement étudiant en 2ème Année à l'IIM(Institut de l'Internet
-              et du Multimédia) Dans un cursus Développement Web, je tends à me
-              spécialiser vers des technologies back-end comme Node & PHP. Je
-              viens à l'origine d'un cursus de graphisme, où j'ai eu l'occasion
-              d'acquérir les bases du Branding, de l'UX/UI Design et du
-              Graphisme.<br /><br />
+              Je suis un jeune étudiant de 21 ans, Actuellement en Développement
+              Web, et auparavant dans le deomaine du graphisme & du Design. J'ai
+              grandi entouré par Internet et par les innovations techniques qui
+              entoure ce domaine, j'ai envie de m'y investir et de perfectionner
+              mes compétences. Je suis aussi passionée de Cinématographie, de
+              Littérature, et je suis pratiquant d'escalade depuis 10 ans.<br /><br />
               Je suis toujours à la recherche de nouvelles opportunités, ainsi
               que de différentes manières de perfectionner mes compétences.
             </p>
