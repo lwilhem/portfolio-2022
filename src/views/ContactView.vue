@@ -76,7 +76,9 @@
       >
         Linkedin
       </h5>
-      <a href="https://github.com/lwilhem" class="m-2">Wilhem Lecanu</a>
+      <a href="https://www.linkedin.com/in/wilhem-lecanu-4181a31a1/" class="m-2"
+        >Wilhem Lecanu</a
+      >
     </div>
   </section>
 </template>
