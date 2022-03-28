@@ -27,5 +27,5 @@ coverage
 *.sln
 *.sw?
 .vercel
-
+.firebase
 .env
