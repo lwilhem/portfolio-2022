@@ -49,8 +49,8 @@
         >
       </TabList>
       <TabPanels>
-        <TabPanel class="flex p-12">
-          <div class="text-zinc-900 dark:text-slate-200">
+        <TabPanel class="flex p-12 w-full h-content">
+          <div class="text-zinc-900 dark:text-slate-200 px-24">
             <h2
               class="text-zinc-900 dark:text-indigo-400 font-title font-bold text-4xl"
             >
@@ -63,7 +63,7 @@
             <span
               class="px-80 py-0 rounded-full bg-zinc-700 dark:bg-indigo-400"
             ></span>
-            <p class="w-5/6 font-body flex py-8">
+            <p class="max-w-5xl font-body flex py-8">
               Je suis un jeune étudiant de 21 ans, Actuellement en Développement
               Web, et auparavant dans le deomaine du graphisme & du Design. J'ai
               grandi entouré par Internet et par les innovations techniques qui
@@ -74,7 +74,9 @@
               que de différentes manières de perfectionner mes compétences.
             </p>
           </div>
-          <img src="/wilhem-photo.jpg" alt="" class="w-1/2 rounded-lg" />
+          <div
+            class="w-2/5 p-4 rounded-xl bg-about-photo bg-cover bg-center"
+          ></div>
         </TabPanel>
         <TabPanel class="flex p-12 flex-wrap items-center justify-center">
           <ve-progress
