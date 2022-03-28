@@ -12,7 +12,7 @@ const skillsList = [
   {
     name: "PHP",
     icon: "akar-icons:php-fill",
-    progression: 70,
+    progression: 52,
   },
   {
     name: "symfony",
@@ -21,22 +21,22 @@ const skillsList = [
   },
   {
     name: "Javascript",
-    icon: "simple-icons:typescript",
-    progression: 80,
+    icon: "fa6-brands:js-square",
+    progression: 70,
   },
   {
     name: "TypeScript",
     icon: "simple-icons:typescript",
-    progression: 50,
+    progression: 45,
   },
   {
     name: "NodeJS",
-    icon: "simple-icons:typescript",
-    progression: 80,
+    icon: "akar-icons:node-fill",
+    progression: 60,
   },
   {
     name: "NestJS",
-    icon: "simple-icons:typescript",
+    icon: "file-icons:nestjs",
     progression: 50,
   },
   {
@@ -46,12 +46,12 @@ const skillsList = [
   },
   {
     name: "photoshop",
-    icon: "simple-icons:typescript",
+    icon: "simple-icons:adobephotoshop",
     progression: 50,
   },
   {
     name: "AdobeXD",
-    icon: "simple-icons:typescript",
+    icon: "simple-icons:adobexd",
     progression: 70,
   },
 ];

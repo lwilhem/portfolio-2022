@@ -37,18 +37,6 @@
         </Tab>
         <Tab v-slot="{ selected }" as="template">
           <button
-            class="p-4 rounded-lg mx-2 font-hero uppercase font-bold w-52 hover:w-60 transition-all duration-500"
-            :class="[
-              selected
-                ? 'bg-red-500 text-zinc-900 dark:bg-indigo-400 dark:text-zinc-900 w-60'
-                : 'bg-red-400 text-slate-200 dark:bg-indigo-300 dark:text-zinc-900 dark:hover:bg-indigo-400 hover:bg-red-500 transition-all hover:text-zinc-900',
-            ]"
-          >
-            Mon Parcours
-          </button></Tab
-        >
-        <Tab v-slot="{ selected }" as="template">
-          <button
             class="p-4 rounded-lg mx-2 font-hero uppercase w-52 font-bold hover:w-60 transition-all duration-500"
             :class="[
               selected
@@ -61,16 +49,20 @@
         >
       </TabList>
       <TabPanels>
-        <TabPanel class="flex p-12 bg-red-500 dark:bg-indigo-400">
-          <div class="text-slate-200">
-            <h2 class="text-zinc-900 font-title font-bold text-4xl">
+        <TabPanel class="flex p-12">
+          <div class="text-zinc-900 dark:text-slate-200">
+            <h2
+              class="text-zinc-900 dark:text-red-500 font-title font-bold text-4xl"
+            >
               Wilhem Lecanu
             </h2>
             <VueWriter
               :array="arr"
-              class="font-hero text-2xl font-semibold mb-8"
+              class="font-hero text-2xl font-semibold mb-8 text-indigo-500 dark:text-slate-200"
             />
-            <span class="px-80 py-0 rounded-full bg-zinc-700"></span>
+            <span
+              class="px-80 py-0 rounded-full bg-zinc-700 dark:bg-red-500"
+            ></span>
             <p class="w-5/6 font-body flex py-8">
               Actuellement étudiant en 2ème Année à l'IIM(Institut de l'Internet
               et du Multimédia) Dans un cursus Développement Web, je tends à me
@@ -84,16 +76,29 @@
           </div>
           <img src="/wilhem-photo.jpg" alt="" class="w-1/2 rounded-lg" />
         </TabPanel>
-        <TabPanel>Content 2 </TabPanel>
         <TabPanel class="flex p-12 flex-wrap items-center justify-center">
-          <div v-for="skill in list" class="m-6">
-            <ve-progress
-              :progress="skill.progression"
-              reverse
-              animation="bounce 3000"
-            >
-            </ve-progress>
-          </div>
+          <ve-progress
+            v-for="skill in list"
+            reverse
+            :progress="skill.progression"
+            color="rgb(239 68 68)"
+            empty-color="transparent"
+            :empty-color-fill="emptyColorFill"
+            :size="180"
+            :thickness="5"
+            :empty-thickness="3"
+            lineMode="out 5"
+            :legend="false"
+            animation="rs 700 1000"
+            fontSize="1.5rem"
+            class="m-4"
+          >
+            <Icon
+              slot="legend-caption"
+              :icon="skill.icon"
+              class="w-24 h-24 text-red-500"
+            />
+          </ve-progress>
         </TabPanel>
       </TabPanels>
     </TabGroup>
