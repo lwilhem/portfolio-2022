@@ -41,7 +41,7 @@
         <Icon icon="bi:arrow-right-circle-fill" class="w-8 h-8 mx-4" />
       </div>
       <div
-        class="flex items-center justify-between w-full px-4 my-12 text-red-500 dark:text-slate-200"
+        class="flex items-center justify-between w-full px-4 my-12 text-red-500 dark:text-indigo-400"
       >
         <a href="">
           <Icon icon="akar-icons:github-fill" class="w-12 h-12 mx-4" />

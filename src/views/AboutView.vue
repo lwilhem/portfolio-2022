@@ -52,7 +52,7 @@
         <TabPanel class="flex p-12">
           <div class="text-zinc-900 dark:text-slate-200">
             <h2
-              class="text-zinc-900 dark:text-red-500 font-title font-bold text-4xl"
+              class="text-zinc-900 dark:text-indigo-400 font-title font-bold text-4xl"
             >
               Wilhem Lecanu
             </h2>
@@ -61,7 +61,7 @@
               class="font-hero text-2xl font-semibold mb-8 text-indigo-500 dark:text-slate-200"
             />
             <span
-              class="px-80 py-0 rounded-full bg-zinc-700 dark:bg-red-500"
+              class="px-80 py-0 rounded-full bg-zinc-700 dark:bg-indigo-400"
             ></span>
             <p class="w-5/6 font-body flex py-8">
               Actuellement étudiant en 2ème Année à l'IIM(Institut de l'Internet
