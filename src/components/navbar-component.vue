@@ -11,7 +11,6 @@
 
   function menuToggle() {
     showMenu.value = !showMenu.value;
-    console.log(showMenu.value);
   }
 </script>
 
@@ -51,7 +50,6 @@
       <Icon icon="heroicons-solid:cube-transparent" class="w-8 h-8" />
       <span class="uppercase font-title font-bold text-2xl">W/L.</span>
     </RouterLink>
-    <DarkThemeSwitch></DarkThemeSwitch>
     <!--RESPONSIVE MENU-->
     <div v-show="screenWidth <= 400">
       <button class="py-6">
@@ -61,11 +59,24 @@
           class="w-12 h-12"
         />
       </button>
+      <div
+        class="bg-slate-200 dark:bg-zinc-900 absolute w-2/3 border-none origin-top-right right-0 h-screen text-red-500"
+        :class="[showMenu === true ? 'flex flex-col' : 'hidden']"
+      >
+        <nav class="flex">
+          <RouterLink
+            v-for="link in linkFormat"
+            class="text-zinc-900 font-hero font-extrabold px-3 hover:text-slate-200 dark:text-slate-200 dark:hover:text-zinc-900"
+            :to="link.linkRoute"
+          >
+            <span class="link-underline p-1 align-middle">{{
+              link.linkName
+            }}</span>
+          </RouterLink>
+        </nav>
+        <DarkThemeSwitch></DarkThemeSwitch>
+      </div>
     </div>
-    <div
-      class="bg-slate-200 absolute w-full origin-top-right right-0 h-screen text-red-500"
-      :class="[showMenu === true ? 'flex flex-col' : 'hidden']"
-    ></div>
   </header>
 </template>
 
