@@ -5,11 +5,18 @@
   import DarkThemeSwitch from "./utilities/dark-theme-switch.vue";
   import LinkList from "./utilities/NavbarLinkList";
 
+  var screenWidth = window.innerWidth;
+  const showMenu = ref(false);
   const linkFormat = ref(LinkList);
+
+  function menuToggle() {
+    showMenu.value = !showMenu.value;
+    console.log(showMenu.value);
+  }
 </script>
 
 <template>
-  <header
+  <!--   <header
     class="w-full h-16 flex items-center justify-between px-16 py-4 text-center bg-slate-200 dark:bg-zinc-900"
   >
     <RouterLink
@@ -33,6 +40,32 @@
       </nav>
     </div>
     <DarkThemeSwitch></DarkThemeSwitch>
+  </header> -->
+  <header
+    class="w-full flex items-center relative justify-between h-content px-4 bg-slate-200 dark:bg-zinc-900"
+  >
+    <RouterLink
+      to="/"
+      class="flex items-center justify-center text-zinc-900 dark:text-slate-200"
+    >
+      <Icon icon="heroicons-solid:cube-transparent" class="w-8 h-8" />
+      <span class="uppercase font-title font-bold text-2xl">W/L.</span>
+    </RouterLink>
+    <DarkThemeSwitch></DarkThemeSwitch>
+    <!--RESPONSIVE MENU-->
+    <div v-show="screenWidth <= 400">
+      <button class="py-6">
+        <Icon
+          icon="heroicons-solid:menu"
+          @click="menuToggle"
+          class="w-12 h-12"
+        />
+      </button>
+    </div>
+    <div
+      class="bg-slate-200 absolute w-full origin-top-right right-0 h-screen text-red-500"
+      :class="[showMenu === true ? 'flex flex-col' : 'hidden']"
+    ></div>
   </header>
 </template>
 
