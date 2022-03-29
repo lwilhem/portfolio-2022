@@ -15,7 +15,7 @@
 
 <template>
   <header
-    class="w-full flex items-center relative justify-between h-content px-4 bg-slate-200 dark:bg-zinc-900 lg:py-8"
+    class="border-0 w-full flex items-center relative justify-between h-content px-4 bg-slate-200 dark:bg-zinc-900 lg:py-8"
   >
     <RouterLink
       to="/"
@@ -34,13 +34,13 @@
         />
       </button>
       <div
-        class="bg-slate-200 dark:bg-zinc-900 absolute w-2/3 md:w-1/3 border-none origin-top-right right-0 h-screen text-red-500"
-        :class="[showMenu === true ? 'flex flex-col' : 'hidden']"
+        class="bg-zinc-900 dark:bg-slate-200 absolute w-2/3 md:w-1/3 border-none origin-top-right right-0 h-screen text-red-500"
+        :class="[showMenu === true ? 'flex flex-col ' : 'hidden']"
       >
         <nav class="flex flex-col px-4 py-2 my-4">
           <RouterLink
             v-for="link in linkFormat"
-            class="text-zinc-900 my-4 font-hero text-center text-xl font-extrabold px-3 hover:text-slate-200 dark:text-slate-200 dark:hover:text-zinc-900"
+            class="text-slate-200 my-4 font-hero text-center text-xl font-extrabold px-3 hover:text-slate-200 dark:text-zinc-900 dark:hover:text-zinc-900"
             :to="link.linkRoute"
           >
             <span class="link-underline p-1 align-middle">{{

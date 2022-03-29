@@ -45,7 +45,7 @@
     </Switch>
     <Icon
       icon="bi:moon-fill"
-      class="w-6 h-6 text-zinc-900 mx-3 dark:text-slate-200"
+      class="w-6 h-6 text-slate-200 lg:text-zinc-900 lg:dark:text-slate-200 mx-3 dark:text-zinc-900"
     />
   </div>
 </template>
