@@ -7,7 +7,7 @@
 </script>
 
 <template>
-  <h2
+  <!--   <h2
     class="font-title font-bold text-8xl text-zinc-900 dark:text-slate-200 bg-slate-200 dark:bg-zinc-900 text-center py-12 pt-16 w-full flex items-center justify-center"
   >
     <Icon
@@ -59,6 +59,53 @@
         </RouterLink>
       </article>
     </div>
+  </section> -->
+  <h2
+    class="flex uppercase items-center justify-center p-8 text-2xl font-title font-bold bg-slate-200 dark:bg-zinc-900 text-zinc-900 dark:text-slate-200 lg:text-6xl xl:text-8xl"
+  >
+    <Icon
+      icon="fa6-solid:bolt"
+      :inline="true"
+      class="w-12 h-12 text-red-500 dark:text-indigo-400 lg:w-16 lg:h-16 xl:w-24 xl:h-24"
+    />
+    Mes Projets !
+  </h2>
+  <section
+    class="bg-slate-200 dark:bg-zinc-900 w-full h-content flex flex-wrap p-6 items-center justify-center"
+  >
+    <article
+      v-for="project in portfolioContent"
+      :id="project.id"
+      class="flex flex-col w-4/5 sm:w-96 hover:bg-indigo-800 transition-all dark:bg-slate-200 dark:text-zinc-900 dark:hover:bg-red-500 dark:hover:text-slate-200 items-center justify-center p-4 m-4 bg-indigo-700 text-slate-200 rounded-lg"
+    >
+      <h3 class="font-hero text-xs sm:text-lg py-2 text-center">
+        {{ project.name }}
+      </h3>
+      <p class="font-body line-clamp-3 text-xs">
+        {{ project.description }}
+      </p>
+      <div class="flex py-4">
+        <Icon
+          v-for="icon in project.technologies"
+          :icon="icon"
+          class="w-8 h-8 p-2 sm:w-12 sm:h-12"
+        />
+      </div>
+      <RouterLink
+        :to="{
+          name: 'singleProject',
+          params: { test: project.id },
+        }"
+        class="flex bg-red-500 dark:bg-zinc-900 dark:text-slate-200 p-4 rounded-lg dark:hover:bg-slate-200 dark:hover:text-zinc-900 transition-all"
+      >
+        <span>Know More</span>
+        <Icon
+          icon="bi:arrow-up-right-circle-fill"
+          :inline="true"
+          class="w-6 h-6 mx-2"
+        />
+      </RouterLink>
+    </article>
   </section>
 </template>
 
