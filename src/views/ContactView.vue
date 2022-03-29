@@ -4,17 +4,17 @@
 
 <template>
   <h2
-    class="font-title font-bold text-8xl text-zinc-900 dark:text-slate-200 bg-slate-200 dark:bg-zinc-900 text-center py-12 pt-16 w-full flex items-center justify-center"
+    class="flex uppercase items-center justify-center p-8 text-2xl font-title font-bold bg-slate-200 dark:bg-zinc-900 text-zinc-900 dark:text-slate-200 lg:text-6xl xl:text-8xl"
   >
     <Icon
       icon="mdi:web"
-      class="w-32 h-32 mx-2 text-red-500 dark:text-indigo-400"
       :inline="true"
+      class="w-12 h-12 text-red-500 dark:text-indigo-400 lg:w-16 lg:h-16 xl:w-24 xl:h-24"
     />
     Contact
   </h2>
   <section
-    class="pb-48 bg-slate-200 flex items-center justify-center dark:bg-zinc-900 text-red-500 dark:text-indigo-400"
+    class="md:h-screen h-content bg-slate-200 flex flex-wrap items-start pt-6 md:pt-24 justify-center dark:bg-zinc-900 text-red-500 dark:text-indigo-400"
   >
     <div
       class="p-4 m-8 flex items-center justify-center flex-col font-body text-zinc-900 dark:text-slate-200"
