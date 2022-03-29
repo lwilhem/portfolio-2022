@@ -12,7 +12,7 @@
 
 <template>
   <section
-    class="bg-slate-200 w-full h-screen p-6 dark:bg-zinc-900 flex items-center justify-evenly hidden"
+    class="bg-slate-200 w-full h-screen p-6 dark:bg-zinc-900 flex items-center justify-evenly"
   >
     <div class="w-2/5 h-content p-6 flex flex-col items-center justify-center">
       <div class="flex items-center align-middle">
