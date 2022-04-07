@@ -1,5 +1,6 @@
 <script setup>
   import { Icon } from "@iconify/vue";
+  import { RouterLink } from "vue-router";
   import VueWriter from "vue-writer";
   const arr = [
     "UX/UI Design...",
@@ -45,11 +46,12 @@
         possible, je préfère me spécialiser dans les technologies Back-end
         telles que NodeJS et symfony.
       </p>
-      <div
+      <RouterLink
+        to="/contactme"
         class="flex items-center justify-center p-4 my-4 w-52 xl:w-72 bg-indigo-700 text-slate-200 rounded-md dark:bg-slate-200 dark:text-red-500"
       >
         <Icon icon="fa-solid:bolt" :inline="true" class="xl:w-8 xl:h-8" />
-        <span class="px-4 font-hero font-semibold xl:text-lg"
+        <span class="px-4 font-hero font-semibold text-sm xl:text-lg"
           >Où me trouver !</span
         >
         <Icon
@@ -57,7 +59,7 @@
           :inline="true"
           class="xl:w-8 xl:h-8"
         />
-      </div>
+      </RouterLink>
       <div class="flex text-indigo-700 dark:text-red-500">
         <a href="https://github.com/lwilhem">
           <Icon
