@@ -48,7 +48,7 @@
       </p>
       <RouterLink
         to="/contactme"
-        class="flex items-center justify-center p-4 my-4 w-52 xl:w-72 bg-indigo-700 text-slate-200 rounded-md dark:bg-slate-200 dark:text-red-500"
+        class="flex items-center justify-center p-4 my-4 w-52 xl:w-72 bg-indigo-700 text-slate-200 rounded-md dark:bg-slate-200 dark:text-red-500 transition-all"
       >
         <Icon icon="fa-solid:bolt" :inline="true" class="xl:w-8 xl:h-8" />
         <span class="px-4 font-hero font-semibold text-sm xl:text-lg"

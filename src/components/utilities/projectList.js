@@ -72,6 +72,41 @@ const projectList = [
     description:
       "Un Projet de messagerie Instantanée, Sur lequel J’ai Principalement contribué à l’architecture Back-End. Le project Utilise NodeJS, Le framework HTTP Express, Et MongoDB, Il possède un système de communication instantané entre utilisateurs, ainsi qu’un système d’authentification, les messages sont stockées sur MongoDb et servit via le service Socket.IO ",
   },
+  {
+    id: 4,
+    name: "Creativ'Lab A",
+    technologies: [
+      "ant-design:console-sql-outlined",
+      "carbon:api-1",
+      "cib:symfony",
+      "mdi:vuejs",
+    ],
+    repoLink: [
+      {
+        backend: "https://github.com/lwilhem/creativ-lab-api",
+      },
+    ],
+    description:
+      "Un Projet Réalisé Pour l'initiative Creativ'Lab de Pôle universitaire Léonard de Vinci(IIM).Cet API Est un support au site du Creativ'Lab, et possède des fonctionnalités comme la gestion de tickets (Des utilisateurs peuvent déposer leurs fichiers d'impression 3D avec une récupération & impression par l'administrateur), visualisation en temps réels de l'occupaction des machine en salle, et des fonctionnalités de blog classique",
+  },
+  {
+    id: 5,
+    name: "Mon Portfolio",
+    technologies: [
+      "mdi:vuejs",
+      "teenyicons:tailwind-solid",
+      "simple-icons:vite",
+      "mdi:firebase",
+    ],
+    repoLink: [
+      {
+        frontend: "https://github.com/lwilhem/portfolio-2022",
+        deployedAt: "https://wilhem-lecanu.web.app",
+      },
+    ],
+    description:
+      "J'ai réalisé cet site Afin d'avoir une plateforme où afficher tout mes projets, ainsi que des informations de contact et des informations personelles. Ce site à été crée 'From Scratch', par moi-même, utilisant VueJs, TailwindCSS, & Vite. Ce projet, bien que Fonctionnel à cet instant, est destiné à évoluer, Avec Par exmple L'intégration d'une vraie architecture backend, et la possibilité de créer du contenu comme des article de blog, etc...",
+  },
 ];
 
 export default projectList;
