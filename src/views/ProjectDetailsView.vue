@@ -65,10 +65,13 @@
       <Icon icon="akar-icons:github-fill" class="w-6 h-6 m-2" :inline="true" />
       <span class="text-xs">Front-End Repository</span>
     </a>
-    <a v-if="link.deployedAt" :href="link.deployedAt">
-      <Icon icon="mdi:web" :inline="true" />
-      <span>See Live Project here !</span>
-      <Icon icon="mdi:arrow-right-bold" :inline="true" />
+    <a
+      v-if="link.deployedAt"
+      :href="link.deployedAt"
+      class="flex items-center justify-center p-2 bg-indigo-700 rounded-md m-2 text-slate-200 dark:bg-red-500"
+    >
+      <Icon icon="mdi:web" :inline="true" class="w-6 h-6 m-2" />
+      <span class="text-xs">Lien du projet</span>
     </a>
   </section>
 </template>
