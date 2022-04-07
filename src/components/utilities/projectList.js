@@ -57,7 +57,7 @@ const projectList = [
   },
   {
     id: 3,
-    name: "NodeJS: Service de Messagerie Instantanée",
+    name: "Service de Messagerie Instantanée",
     technologies: [
       "akar-icons:node-fill",
       "simple-icons:express",
@@ -74,7 +74,7 @@ const projectList = [
   },
   {
     id: 4,
-    name: "Creativ'Lab A",
+    name: "Creativ'Lab",
     technologies: [
       "ant-design:console-sql-outlined",
       "carbon:api-1",
