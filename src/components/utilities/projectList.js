@@ -13,7 +13,7 @@ const projectList = [
     ],
     repoLink: [
       {
-        backend: "https://github.com/lwilhem/devlab-goodies-backend",
+        backend: "https://github.com/lwilhem/nest-api",
         frontend: "https://github.com/lwilhem/vite-devlab-goodies-client",
       },
     ],
@@ -106,6 +106,25 @@ const projectList = [
     ],
     description:
       "J'ai réalisé cet site Afin d'avoir une plateforme où afficher tout mes projets, ainsi que des informations de contact et des informations personelles. Ce site à été crée 'From Scratch', par moi-même, utilisant VueJs, TailwindCSS, & Vite. Ce projet, bien que Fonctionnel à cet instant, est destiné à évoluer, Avec Par exmple L'intégration d'une vraie architecture backend, et la possibilité de créer du contenu comme des article de blog, etc...",
+  },
+  {
+    id: 6,
+    name: "On the Mints !",
+    technologies: [
+      "mdi:vuejs",
+      "teenyicons:tailwind-solid",
+      "simple-icons:vite",
+      "cryptocurrency:matic",
+      "logos:netlify",
+    ],
+    repoLink: [
+      {
+        frontend: "https://github.com/lwilhem/domains-polygon",
+        deployedAt: "https://on-the-mints.netlify.app",
+      },
+    ],
+    description:
+      "Un projet Pour me former sur Web3, Avec Hardhat et solidity Pour l'interaction avec la blockchain, et Vues, WindiCSS et ethers dans le client (PWA disponible). C'est un système inspirer par Ethereum Name system, et qui permet de créer des nom de domaines uniques grace aux tokens ERC721",
   },
 ];
 
